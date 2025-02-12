@@ -2,12 +2,16 @@ package com.cards.war;
 
 class Card {
     public int Number;
-    public String Suite;
+    public String Suit;
 
-    public Card(int Number, String suite)
+    //--------------------------------------------------------
+    // Name: Constructor
+    // Abstract: creates a card with a number and suit
+    //--------------------------------------------------------
+    public Card(int Number, String suit)
     {
         this.Number = Number;
-        this.Suite = suite;
+        this.Suit = suit;
     }
 
 }

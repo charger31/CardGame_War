@@ -55,7 +55,7 @@ class Deck {
     public void PrintDeck()
     {
         for (Card card : Deck) {
-            System.out.println(card.Suite);
+            System.out.println(card.Suit);
             System.out.println(card.Number);
             System.out.println("\n");
         }
@@ -80,12 +80,12 @@ class Deck {
 
 
     //--------------------------------------------------------
-    // Name: Add card
-    // Abstract: Adds a new card to the deck
+    // Name: Print Last Card
+    // Abstract: Prints the last card added to the deck
     //--------------------------------------------------------
     public void printLastCard()
     {
-        System.out.println(Deck.getLast().Suite);
+        System.out.println(Deck.getLast().Suit);
         System.out.println(Deck.getLast().Number);
         System.out.println("\n");
     }
