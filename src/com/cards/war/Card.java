@@ -1,6 +1,6 @@
 package com.cards.war;
 
-class Card {
+public class Card {
     public int Number;
     public String Suit;
 

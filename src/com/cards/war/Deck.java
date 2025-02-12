@@ -94,10 +94,10 @@ class Deck {
 
 
     //--------------------------------------------------------
-    // Name: Print Last Card
-    // Abstract: Prints the last card added to the deck
+    // Name: Print Top Card
+    // Abstract: Prints the top card added to the deck
     //--------------------------------------------------------
-    public void printLastCard()
+    public void printTopCard()
     {
         int CardNumber = Deck.getLast().Number;
 
