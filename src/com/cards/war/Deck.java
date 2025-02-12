@@ -56,8 +56,22 @@ class Deck {
     {
         for (Card card : Deck) {
             System.out.println(card.Suit);
-            System.out.println(card.Number);
-            System.out.println("\n");
+            if(card.Number == 1)
+            {
+                System.out.println("Ace");
+            } else if (card.Number == 11)
+            {
+                System.out.println("Jack");
+            } else if (card.Number == 12)
+            {
+                System.out.println("Ace");
+            }else if (card.Number == 13)
+            {
+                System.out.println("Ace");
+            } else{
+                System.out.println(card.Number);
+            }
+            System.out.println();
         }
     }
 
@@ -85,8 +99,24 @@ class Deck {
     //--------------------------------------------------------
     public void printLastCard()
     {
+        int CardNumber = Deck.getLast().Number;
+
         System.out.println(Deck.getLast().Suit);
-        System.out.println(Deck.getLast().Number);
-        System.out.println("\n");
+        if(CardNumber == 1)
+        {
+            System.out.println("Ace");
+        } else if (CardNumber == 11)
+        {
+            System.out.println("Jack");
+        } else if (CardNumber == 12)
+        {
+            System.out.println("Queen");
+        }else if (CardNumber == 13)
+        {
+            System.out.println("King");
+        } else{
+            System.out.println(CardNumber);
+        }
+        System.out.println();
     }
 }

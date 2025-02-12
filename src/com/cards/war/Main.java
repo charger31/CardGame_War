@@ -8,17 +8,14 @@ public class Main {
 
         //shuffles the deck and prints the last card
         deck.Shuffle();
-        System.out.println("\n");
         deck.printLastCard();
 
-        System.out.println("\n");
 
         //adds a singular card
-        deck.AddCard(6, "Spades");
+        deck.AddCard(11, "Spades");
         deck.printLastCard();
 
         //removes the card that was added
-        System.out.println("\n");
         deck.RemoveLastCard();
         deck.printLastCard();
     }
