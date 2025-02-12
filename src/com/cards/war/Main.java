@@ -7,16 +7,6 @@ public class Main {
         Deck deck = new Deck();
 
         //shuffles the deck and prints the last card
-        deck.Shuffle();
-        deck.printTopCard();
-
-
-        //adds a singular card
-        deck.AddCard(11, "Spades");
-        deck.printTopCard();
-
-        //removes the card that was added
-        deck.RemoveLastCard();
-        deck.printTopCard();
+        deck.printDeck();
     }
 }

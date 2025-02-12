@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 class Deck {
-    ArrayList<Card> Deck = new ArrayList<>();
+    private final ArrayList<Card> Deck = new ArrayList<>();
 
 
     //--------------------------------------------------------
@@ -19,19 +19,19 @@ class Deck {
             {
                 if(index == 0)
                 {
-                    AddCard(index2 + 1, "Spades");
+                    addCard(index2 + 1, "Spades");
                 }
                 else if(index == 1)
                 {
-                    AddCard(index2 + 1, "Hearts");
+                    addCard(index2 + 1, "Hearts");
                 }
                 else if(index == 2)
                 {
-                    AddCard(index2 + 1, "Diamonds");
+                    addCard(index2 + 1, "Diamonds");
                 }
                 else if(index == 3)
                 {
-                    AddCard(index2 + 1, "Clubs");
+                    addCard(index2 + 1, "Clubs");
                 }
             }
         }
@@ -52,7 +52,7 @@ class Deck {
     // Name: Print deck
     // Abstract: Prints all cards in the deck
     //--------------------------------------------------------
-    public void PrintDeck()
+    public void printDeck()
     {
         for (Card card : Deck) {
             System.out.println(card.Suit);
@@ -64,10 +64,10 @@ class Deck {
                 System.out.println("Jack");
             } else if (card.Number == 12)
             {
-                System.out.println("Ace");
+                System.out.println("Queen");
             }else if (card.Number == 13)
             {
-                System.out.println("Ace");
+                System.out.println("King");
             } else{
                 System.out.println(card.Number);
             }
@@ -80,16 +80,31 @@ class Deck {
     // Name: Add card
     // Abstract: Adds a new card to the deck
     //--------------------------------------------------------
-    public void AddCard(int newNumber, String newSuite)
+    public void addCard(int newNumber, String newSuite)
     {
         if(newNumber > 0 && newNumber <14){
             Deck.add(new Card(newNumber, newSuite));
         }
     }
 
-    public void RemoveLastCard()
+
+    //--------------------------------------------------------
+    // Name: Remove Top Card
+    // Abstract: removes the top card of the deck
+    //--------------------------------------------------------
+    public void removeTopCard()
     {
         Deck.removeLast();
+    }
+
+
+    //--------------------------------------------------------
+    // Name: Gets Top Card
+    // Abstract: returns the top card of the deck
+    //--------------------------------------------------------
+    public Card getTopCard()
+    {
+        return Deck.getLast();
     }
 
 
