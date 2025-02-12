@@ -46,4 +46,32 @@ public class Player {
     {
         Discard.add(new Card(CardToDiscard.Number, CardToDiscard.Suit));
     }
+
+    public void printHand()
+    {
+        for (Card card : Hand) {
+            System.out.println(card.Suit);
+            if(card.Number == 1)
+            {
+                System.out.println("Ace");
+            } else if (card.Number == 11)
+            {
+                System.out.println("Jack");
+            } else if (card.Number == 12)
+            {
+                System.out.println("Queen");
+            }else if (card.Number == 13)
+            {
+                System.out.println("King");
+            } else{
+                System.out.println(card.Number);
+            }
+            System.out.println();
+        }
+    }
+
+    public int handSize()
+    {
+        return Hand.size();
+    }
 }
