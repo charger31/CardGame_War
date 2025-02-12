@@ -73,7 +73,7 @@ class Deck {
         }
     }
 
-    public void RemoveTopCard()
+    public void RemoveLastCard()
     {
         Deck.removeLast();
     }

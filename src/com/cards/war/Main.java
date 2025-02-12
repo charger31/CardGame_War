@@ -19,7 +19,7 @@ public class Main {
 
         //removes the card that was added
         System.out.println("\n");
-        deck.RemoveTopCard();
+        deck.RemoveLastCard();
         deck.printLastCard();
     }
 }
