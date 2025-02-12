@@ -31,8 +31,25 @@ public class Main {
         System.out.println("\n");
 
         //check to see cards have gone into hand
+        System.out.println("Cards in Player 1's hand:");
         System.out.println(player1.handSize());
-        System.out.println(player2.handSize());
 
+        System.out.println("Cards in Player 2's hand:");
+        System.out.println(player2.handSize());
+        System.out.println("\n");
+
+        //Gets the top card of player 1's hand and then puts it into the discard and then removes it from the hand
+        System.out.println("Current Top Card in Player 1's hand:");
+        System.out.println(player1.getTopCard().Number + " " + player1.getTopCard().Suit);
+        System.out.println("\n");
+
+        player1.addCardToDiscard(player1.getTopCard());
+        player1.removeCardFromHand();
+
+        System.out.println("Cards in Player 1's hand:");
+        System.out.println(player1.handSize());
+
+        System.out.println("Current Top Card in Player 1's hand:");
+        System.out.println(player1.getTopCard().Number + " " + player1.getTopCard().Suit);
     }
 }

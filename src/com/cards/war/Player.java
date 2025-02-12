@@ -50,21 +50,20 @@ public class Player {
     public void printHand()
     {
         for (Card card : Hand) {
-            System.out.println(card.Suit);
             if(card.Number == 1)
             {
-                System.out.println("Ace");
+                System.out.println("Ace" + " " + card.Suit);
             } else if (card.Number == 11)
             {
-                System.out.println("Jack");
+                System.out.println("Jack" + " " + card.Suit);
             } else if (card.Number == 12)
             {
-                System.out.println("Queen");
+                System.out.println("Queen" + " " + card.Suit);
             }else if (card.Number == 13)
             {
-                System.out.println("King");
+                System.out.println("King" + " " + card.Suit);
             } else{
-                System.out.println(card.Number);
+                System.out.println(card.Number + " " + card.Suit);
             }
             System.out.println();
         }
