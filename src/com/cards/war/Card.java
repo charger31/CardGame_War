@@ -14,5 +14,4 @@ public class Card {
         this.Number = Number;
         this.Suit = suit;
     }
-
 }

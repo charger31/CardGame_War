@@ -54,20 +54,26 @@ class Deck {
     //--------------------------------------------------------
     public void printDeck()
     {
-        for (Card card : Deck) {
+        for (Card card : Deck)
+        {
             if(card.Number == 1)
             {
                 System.out.println("Ace" + " " + card.Suit);
-            } else if (card.Number == 11)
+            }
+            else if (card.Number == 11)
             {
                 System.out.println("Jack" + " " + card.Suit);
-            } else if (card.Number == 12)
+            }
+            else if (card.Number == 12)
             {
                 System.out.println("Queen" + " " + card.Suit);
-            }else if (card.Number == 13)
+            }
+            else if (card.Number == 13)
             {
                 System.out.println("King" + " " + card.Suit);
-            } else{
+            }
+            else
+            {
                 System.out.println(card.Number + " " + card.Suit);
             }
             System.out.println();
