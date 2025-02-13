@@ -67,7 +67,8 @@ public class Player {
             {
                 System.out.println("King" + " " + card.Suit);
             }
-            else{
+            else
+            {
                 System.out.println(card.Number + " " + card.Suit);
             }
             System.out.println();

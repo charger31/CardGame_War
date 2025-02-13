@@ -87,7 +87,8 @@ class Deck {
     //--------------------------------------------------------
     public void addCard(int newNumber, String newSuite)
     {
-        if(newNumber > 0 && newNumber <14){
+        if(newNumber > 0 && newNumber <14)
+        {
             Deck.add(new Card(newNumber, newSuite));
         }
     }
@@ -125,16 +126,20 @@ class Deck {
         if(CardNumber == 1)
         {
             System.out.println("Ace" + " " + Deck.getLast().Suit);
-        } else if (CardNumber == 11)
+        }
+        else if (CardNumber == 11)
         {
             System.out.println("Jack" + " " + Deck.getLast().Suit);
-        } else if (CardNumber == 12)
+        }
+        else if (CardNumber == 12)
         {
             System.out.println("Queen" + " " + Deck.getLast().Suit);
-        }else if (CardNumber == 13)
+        }
+        else if (CardNumber == 13)
         {
             System.out.println("King" + " " + Deck.getLast().Suit);
-        } else{
+        }
+        else{
             System.out.println(CardNumber);
         }
         System.out.println();
